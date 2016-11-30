@@ -37,7 +37,7 @@ var _keepHighest = function(x,y){ return x >= y ? x : y; };
 var max = _.reduce(_keepHighest, -Infinity);
 
 
-  
+
 // Bonus 1:
 // ============
 // wrap array's slice to be functional and curried.
@@ -52,7 +52,7 @@ var slice = _.curry(function(start, end, list) {
 // Bonus 2:
 // ============
 // use slice to define a function "take" that takes n elements. Make it curried
-var take = undefined;
+var take = slice(0);
 
 
 module.exports = { words: words,
