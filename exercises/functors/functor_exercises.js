@@ -7,7 +7,7 @@ var _ = require('ramda');
 // Use _.add(x,y) and _.map(f,x) to make a function that increments a value
 // inside a functor.
 
-var ex1 = map(add(1))
+var ex1 = _.map(_.add(1));
 
 
 
@@ -39,10 +39,8 @@ var ex3 = _.compose(_.map(_.head), safeProp('name'));
 // Exercise 4
 // ==========
 // Use Maybe to rewrite ex4 without an if statement.
-var ex4 = function(n) {
-  return Maybe.of(n).map(parseInt);
-}
 
+var ex4 = _.compose(_.map(parseInt), Maybe.of);
 
 // Exercise 5
 // ==========
@@ -60,8 +58,11 @@ var getPost = function(i) {
   });
 };
 
-var ex5 = undefined;
+// var ex5 = _.compose(_.map(toUpperCase), _.map(_.prop('title')), getPost);
 
+var titleToUpperCase = _.map(_.compose(toUpperCase, _.prop('title')));
+
+var ex5 = _.compose(titleToUpperCase, getPost);
 
 
 // Exercise 6
@@ -75,7 +76,7 @@ var checkActive = function(user) {
   return user.active ? Right.of(user) : Left.of('Your account is not active');
 };
 
-var ex6 = undefined;
+var ex6 = _.compose(_.map(showWelcome), checkActive);
 
 
 
@@ -84,8 +85,10 @@ var ex6 = undefined;
 // Write a validation function that checks for a length > 3. It should return
 // Right(x) if it is greater than 3 and Left("You need > 3") otherwise.
 
+
+
 var ex7 = function(x) {
-  return undefined; // <--- write me. (don't be pointfree)
+  return x.length > 3 ? Right.of(x) : Left.of('You need > 3'); // <--- write me. (don't be pointfree)
 };
 
 
@@ -103,6 +106,6 @@ var save = function(x) {
   });
 };
 
-var ex8 = undefined;
+var ex8 = _.compose(either(IO.of, save), ex7);
 
 module.exports = {ex1: ex1, ex2: ex2, ex3: ex3, ex4: ex4, ex5: ex5, ex6: ex6, ex7: ex7, ex8: ex8};
