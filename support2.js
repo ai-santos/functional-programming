@@ -1,4 +1,4 @@
-require('../part1_exercises/support');
+require('./support');
 var _ = require('ramda');
 var Task = require('data.task');
 var curry = _.curry;

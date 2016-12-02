@@ -1,4 +1,4 @@
-require('../../support');
+require('../../support2');
 var E = require('./functor_exercises');
 var assert = require("chai").assert;
 
@@ -44,5 +44,4 @@ describe("Functor Exercises", function(){
     assert.deepEqual(E.ex8("...").unsafePerformIO(), "You need > 3");
   });
 });
-Contact GitHub API Training Shop Blog About
-© 2016 GitHub, Inc. T
+
