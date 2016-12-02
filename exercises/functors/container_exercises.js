@@ -1,4 +1,4 @@
-require('../../support');
+require('../../support2');
 var Task = require('data.task');
 var _ = require('ramda');
 
