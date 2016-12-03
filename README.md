@@ -4,7 +4,7 @@ This goal provides an introduction to functional programming concepts using Java
 
 ## Context
 
-Functional programming patterns are becoming increasingly popular in the web development community. Using these patterns results in code that is more adaptable and flexible, less buggy, and more scalable. 
+Functional programming patterns are becoming increasingly popular in the web development community. Using these patterns results in code that is more adaptable and flexible, less buggy, and more scalable.
 
 The article [The Two Pillars of JavaScript : Pt 2: Functional Programming
 How to Stop Micromanaging Everything](https://medium.com/javascript-scene/the-two-pillars-of-javascript-pt-2-functional-programming-a63aa53a41a4#.p9gfmzfel) goes into many of the reasons why you might want to consider learning how to write JavaScript as a functional programmer would.
@@ -14,7 +14,7 @@ How to Stop Micromanaging Everything](https://medium.com/javascript-scene/the-tw
 - [X] Read the [Mostly Adequate Guide to Functional Programming](https://drboolean.gitbooks.io/mostly-adequate-guide/content/) through Chapter 8: Tupperware
 - [X] Complete the exercises in the Mostly Adequate Guide (note: there aren't exercises after each chapter - just the ones on Ch 5: Currying, Ch: 6: Coding by Composing, and Ch: 8 Tupperware).
 - [X] Run unit test against exercises  
-- [ ] Practice these concepts by completing at least [5 Functional Programming exercises](https://www.codewars.com/kata/latest/my-languages?tags=Functional+Programming) on CodeWars (just a heads up: you're required to answer a couple of super basic JS questions to sign up for CodeWars)
+- [X] Practice these concepts by completing at least [5 Functional Programming exercises](https://www.codewars.com/kata/latest/my-languages?tags=Functional+Programming) on CodeWars (just a heads up: you're required to answer a couple of super basic JS questions to sign up for CodeWars)
 
 ### Required
 
@@ -22,7 +22,7 @@ How to Stop Micromanaging Everything](https://medium.com/javascript-scene/the-tw
 
 ## Quality Rubric
 
-- All exercises in the Mostly Awesome Guide are completed and pushed to GitHub: 25 pts 
+- All exercises in the Mostly Awesome Guide are completed and pushed to GitHub: 25 pts
 - At least 5 exercises on CodeWars are completed: 25 pts
 
 ## Resources
